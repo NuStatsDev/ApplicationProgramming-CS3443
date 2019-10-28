@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="backgroundimg" fitHeight="648.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="182.0" layoutY="126.0" prefHeight="88.0" prefWidth="318.0" text="Starfleet Personnel">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0eeb51" />
+                        <Stop color="#1e9a8c" offset="0.44814814814814824" />
+                        <Stop color="#037dc9" offset="0.9803703703703703" />
+                        <Stop color="#037dc9" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="133.0" layoutY="343.0" text="UserName :" textFill="#16c913">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="393.0" text="Password :" textFill="#16c913">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usrname" layoutX="274.0" layoutY="340.0" promptText="UserName" />
+            <Button fx:id="login" layoutX="300.0" layoutY="478.0" mnemonicParsing="false" onAction="#handle" text="Login" textFill="#180480">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorbox" layoutX="99.0" layoutY="371.0" prefHeight="17.0" prefWidth="254.0" />
+            <ImageView fx:id="smallimg" fitHeight="223.0" fitWidth="200.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+            <PasswordField fx:id="pass" layoutX="274.0" layoutY="390.0" promptText="Password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
